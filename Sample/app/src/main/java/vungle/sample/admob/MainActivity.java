@@ -68,33 +68,33 @@ public class MainActivity extends Activity {
     private AdListener mAdListener = new AdListener() {
         @Override
         public void onAdClosed() {
-            Toast.makeText(MainActivity.this, "onAdClosed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "onInterstitialAdClosed", Toast.LENGTH_SHORT).show();
             showInterstitialAdButton.setText("Ad shown");
             showInterstitialAdButton.setEnabled(false);
         }
 
         @Override
         public void onAdFailedToLoad(int errorCode) {
-            Toast.makeText(MainActivity.this, "onAdFailedToLoad", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "onInterstitialAdFailedToLoad", Toast.LENGTH_SHORT).show();
             showInterstitialAdButton.setText("Fail to Load Ad");
             showInterstitialAdButton.setEnabled(false);
         }
 
         @Override
         public void onAdLeftApplication() {
-            Toast.makeText(MainActivity.this, "onAdLeftApplication", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "onInterstitialAdLeftApplication", Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onAdLoaded() {
-            Toast.makeText(MainActivity.this, "onAdLoaded", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "onInterstitialAdLoaded", Toast.LENGTH_SHORT).show();
             showInterstitialAdButton.setText("Show");
             showInterstitialAdButton.setEnabled(true);
         }
 
         @Override
         public void onAdOpened() {
-            Toast.makeText(MainActivity.this, "onAdOpened", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "onInterstitialAdOpened", Toast.LENGTH_SHORT).show();
         }
     };
 
@@ -145,3 +145,4 @@ public class MainActivity extends Activity {
     };
 
 }
+
