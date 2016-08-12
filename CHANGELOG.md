@@ -1,5 +1,8 @@
 ## Changelog
 
+## VERSION 2.0.0
+* Compatibility with Android Publisher SDK v4.0
+
 ## VERSION 1.2.0
 * Fixed ad loading of the reward based adapter.
 
