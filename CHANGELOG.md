@@ -1,5 +1,11 @@
 ## Changelog
 
+## VERSION 2.1.0
+* "userId" option can be passed using network extras bundle.
+* Added "mute" option.
+* Fire "rewarded" event before "ad closed".
+* Requires at least Vungle Android SDK 4.0.3.
+
 ## VERSION 2.0.0
 * Compatibility with Android Publisher SDK v4.0
 
