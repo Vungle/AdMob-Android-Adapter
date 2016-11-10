@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ad_rewarded"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:onClick="load"
+            android:text="@string/ad_load" />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/load"
+            android:layout_centerHorizontal="true"
+            android:enabled="false"
+            android:onClick="show"
+            android:text="@string/ad_show" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/ad_interstitial"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/loadInterstitial"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:onClick="loadInterstitial"
+            android:text="@string/ad_load" />
+
+        <Button
+            android:id="@+id/showInterstitial"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loadInterstitial"
+            android:layout_centerHorizontal="true"
+            android:enabled="false"
+            android:onClick="showInterstitial"
+            android:text="@string/ad_show" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/options"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/ad_options"
+            android:onClick="options"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/logLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/options"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ad_log"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/logLabel"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/logContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

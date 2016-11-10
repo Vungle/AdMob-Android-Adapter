@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_user_id"
+        android:key="pref_key_user_id"
+        android:title="@string/pref_title_user_id" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_key_sound_enabled"
+        android:title="@string/pref_title_sound_enabled" />
+</PreferenceScreen>
