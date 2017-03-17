@@ -1,5 +1,8 @@
 ## Changelog
 
+## VERSION 2.1.1
+* Fix: VungleListener won't be re-added after calling destroy.
+
 ## VERSION 2.1.0
 * "userId" option can be passed using network extras bundle.
 * Added "mute" option.
