@@ -1,5 +1,8 @@
 ## Changelog
 
+## VERSION 2.2.0
+* Compatibility with Android Publisher SDK v4.1
+
 ## VERSION 2.1.1
 * Fix: VungleListener won't be re-added after calling destroy.
 
